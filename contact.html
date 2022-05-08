@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/all.min.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+<title></title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">House Steak</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html" >Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <p class="cartcount">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="count">0</span>
+          </p>
+        </div>
+      </nav>
+
+      <div class="form">
+        <form id="form" name="myform" method="get">
+            <table>
+                <tr>
+                    <td><label>Full Name</label></td>
+                    <td ><input id="inputname" type="text" name="name" onkeyup="validation()" ><small id="valid1"></small></td>   
+                </tr>
+                <tr>
+                    <td class="px-4"><label>Email</label></td>
+                    <td><input id="inputemail" type="email" name="email" onkeyup="validation()"><small id="valid2"></small></td>
+                </tr>
+                <tr>
+                    <td><label>Phone Number</label></td>
+                    <td><input id="inputphone" type="text" name="password" onkeyup="validation()"><small id="valid3"></small></td>
+                </tr>
+                <tr>
+                    <td><input class="contact btn btn-light px-5" type="submit" value="Contact Us" name="submit"></td>
+                </tr>
+            </table>    
+        </form>
+      </div>
+
+
+      <section class="footer py-4 text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 article1 ">
+                    <h5 class="mb-5">About Restaurant</h5>
+                    <h4 class="fw-bold fst-italic">House Steak</h4>
+                    <span class="mb-4">Lorem ipsum dolor sit amedot.</span>
+                    <div class="links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 article2 ">
+                    <h5 class="mb-5">Explore Link</h5>
+                        <a href="#"><i class="fa-solid fa-caret-right me-4"></i>Our Services</a>
+                        <a href="#"><i class="fa-solid fa-caret-right me-4"></i>Meet Our Team</a>
+                        <a href="#"><i class="fa-solid fa-caret-right me-4"></i>Forum</a>
+                        <a href="#"><i class="fa-solid fa-caret-right me-4"></i>Contact Us</a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 article3">
+                    <h5 class="mb-5">Latest Post</h5>
+                    <div class="aug">
+                        <p><span>20</span><br>AUG</p>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="aug">
+                        <p><span>20</span><br>AUG</p>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 article4 ">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <p><i class="fa-solid fa-location-dot me-3 "></i> 123 New Line, London UK</p>
+                    <p><i class="fa-solid fa-envelope me-3"></i> hello@contact-us.com</p>
+                    <p><i class="fa-solid fa-mobile-screen-button me-4"></i>+44 00 00 1234<br>++ 44 00 00 1234</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+      <div class="section8  text-center py-4 text-light">
+          <div class="container">
+              <h5>Copyright &copy;2022 | Designed By 
+                  <span>Web Technolgoies Team</span>
+            </h5> 
+          </div>
+      </div>  
+    
+
+    
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/validation.js"></script>
+</body>
+</html>

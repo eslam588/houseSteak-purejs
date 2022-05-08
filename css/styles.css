@@ -1,0 +1,486 @@
+.container{
+    width: 1100px;
+}
+body{
+    scroll-behavior: smooth;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* start navbar */
+nav{
+    padding-left:50px;
+    padding-right: 50px;
+    
+}
+nav p.cartcount{
+    position: relative;
+    margin-top:15px;
+}
+nav p.cartcount i{
+    font-size:25px;
+    color:white;
+}
+nav p #count{
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width:18px;
+    height:18px;
+    background-color:red;
+    border-radius:6px;
+    font-size: 10px;
+    line-height:18px;
+    text-align: center;
+    color:white;
+}
+
+.navbar{
+    background-color: rgb(19, 154, 154);
+    
+}
+.navbar a{
+    color:white;
+    font-weight: bold;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-size:25px;
+    text-shadow: 5px 5px 5px #f36710;
+}
+
+.navbar a:hover,.navbar a.active{
+    color:rgb(45, 49, 52);
+    
+}
+#navbarNav{
+   margin-left: 120px;
+}
+
+#navbarNav ul li{
+    margin-left:50px;
+
+}
+
+a:active{
+    color: #000 !important;
+}
+/* end navbar */
+
+/* start slider */
+
+.slider{
+    position: relative;
+    
+}
+.slider img{
+    width: 100%;
+    height: calc(100vh - 60px);
+    
+}
+.slider .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(17, 17, 18,0.7);
+    text-align: center;
+}
+.slider .overlay .container{
+    width: 50%;
+    margin-top:200px;
+}
+
+.slider .overlay .container h1{
+    color: white;
+    margin-bottom:30px;
+    
+}
+.slider .overlay .container p{
+    color: white;
+    margin-bottom:30px;
+
+}
+.slider .overlay .container button{
+    background-color: transparent;
+    border: 2px solid rgb(19, 154, 154);
+    padding:10px;
+    color: white;   
+    font-weight: bold;
+    transition: all 0.5s ease-in-out
+}
+.slider .overlay .container button:hover{
+    background-color:rgb(19, 154, 154);
+}
+
+
+
+
+.buttons i{
+    position: absolute;
+    top: 50%;
+    color: rgb(255, 255, 255); 
+    font-size: 50px;
+    z-index: 5;
+}
+.buttons i:hover{
+    cursor: pointer;
+}
+
+.buttons .btn-1 {
+    right: 50px;   
+}
+.buttons .btn-2 {
+    left: 50px;
+}
+
+/* end slider */
+
+
+/* start features */
+
+
+.features{
+    background-color:rgb(219, 243, 243);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.features h2{
+    margin: auto;
+}
+.features span{
+    width: 50%;
+    display:inline-block;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 25px;
+
+}
+.features .features-box{
+    display: flex;
+    justify-content:space-between;
+}
+.features .features-box .box{
+    background-color:white;
+    margin:30px;
+    padding: 30px;
+    position: relative;
+    border-radius:10px;
+    border:1px solid black;
+}
+.features .features-box .box h4{
+    margin-top:40px;
+
+}
+.features .features-box .box i{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width:70px;
+    height:70px;
+    line-height: 50px;
+    background-color:rgb(19, 154, 154);
+    border-radius:50%;
+    font-size:25px;
+    padding:10px;
+    color:white;
+}
+
+
+/* end features */
+
+
+/* start menu */
+.menu{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.menu ul{
+    margin-top:40px;
+    margin-bottom:30px;
+    
+}
+.menu ul li {
+    display:inline-block;
+    font-size:20px;
+    margin:10px;
+    background-color:transparent;
+    border: 2px solid rgb(19, 154, 154);
+    padding: 8px;
+    border-radius:50px;
+    width: 120px;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.menu #items{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.menu #items .card{
+    max-width: 335px;
+    border:1px solid #ccc;
+    margin: 10px;
+    transition: all 2s ease-in-out;
+}
+
+.menu #items .card .imgcontainer img{
+    width: 100%;
+    height:250px;
+}
+
+
+
+.hide { 
+     display:none;
+}
+
+.menu ul li.active{
+    background-color:rgb(19, 154, 154);
+    color:white;
+}
+
+.desccontainer{
+    padding:15px;
+}
+
+.item-add{
+    background-color:#5d5454;
+    color:white;
+    padding:5px 10px;
+    border-radius:15px;
+}
+.item-add:hover{
+    background-color:transparent;
+    color:black;
+    border:2px solidrgb(19, 154, 154)
+}
+
+.imgclass{
+    transition:all 0.5s ease-in-out;
+
+}
+.imgclass:hover{
+    transform:scale(1.05);
+
+}
+.toast{
+    background-color:rgb(28, 155, 177);
+    color:white;
+    font-weight: bold;
+} 
+
+
+
+/* end menu */
+
+
+
+
+.footer {
+    background: linear-gradient(rgba(25, 30, 37, 0.5), rgba(35, 34, 41, 0.9)),
+      url(../images/antique.jpg) no-repeat center/cover;
+  }
+  
+  .footer .container .row {
+    margin: 0;
+  }
+  
+  .footer .row .col-12 {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    position: relative;
+  }
+  
+  .footer .article1 span {
+    display: block;
+    margin-top: -10px;
+  }
+  .footer .article1 .links a {
+    display: inline-block;
+    background-color: rgb(19, 154, 154);
+    color: #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 6px;
+  }
+
+  .footer .article1 h4{
+      color:rgb(19, 154, 154);
+      font-size:30px; 
+  }
+  
+  .footer .article2 a {
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(240, 235, 235);
+    text-decoration: none;
+  }
+  .footer .article2 a:hover {
+    color: rgb(19, 154, 154);
+  }
+  .footer .article3 .aug {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .footer .article3 .aug p:first-of-type {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 8px;
+    line-height: 9px;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  .footer .article3 .aug p:first-of-type span {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  .footer .article3 .aug p {
+    font-size: 14px;
+  }
+  .footer .article4 p:last-of-type {
+    display: flex;
+  }
+  
+  .section8 {
+    background-color: #21222b;
+    text-align: center;
+    position: relative;
+    
+  }
+  
+  .section8 h5 {
+    font-size: 13px;
+  }
+
+  .section8 h5 span {
+    color: rgb(19, 154, 154);
+
+  }
+  .btn-fixed {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    background-color: rgb(19, 154, 154);
+    padding: 8px;
+    border-radius: 50%;
+  }
+  
+  .btn-fixed > a > img {
+    width: 40px;
+    height: 40px;
+  }
+
+/* start form */
+
+  .form{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)),
+    url("../images/contact.jpg") no-repeat center center/cover;
+      height: calc(100vh - 58px);
+      padding: 40px;
+      border-bottom: 18px solid rgb(149, 132, 132);
+  }
+
+  h2{
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:20px
+}
+.form form{
+    border-radius: 10px;
+    border:2px solid black;
+    width: 45%;
+    margin: auto;
+    padding: 30px 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color:white;
+    
+    
+}
+
+.form form table tr td{
+    padding: 5px;
+    padding-bottom:30px;
+}
+.form form table tr td .contact{
+    background-color: transparent;
+    color:white;
+    border:1px solid rgb(38, 182, 184);
+    outline:none;
+    font-weight:bold;
+    margin-left:70%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.form form table tr td input[type="text"],input[type="password"],input[type="email"]{
+    width: 100%;
+    background:none;
+    border: none;
+    border: 1px solid rgb(38, 182, 184);
+    outline: none;
+    margin-bottom:15px;
+    color:white;
+    border-radius:10px;
+    padding:2px 10px;
+    margin-top: 15px;
+}
+
+
+.form form table tr td label{
+    margin-right:5px;
+    
+}
+
+.form form table tr td label{
+    font-weight:bold;
+    font-size:20px
+}
+
+.form form table tr td small{
+    color:#e74c3c;
+    margin-top: 0 !important;
+}
+
+/* end form */
+
+
+.about{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)),
+    url("../images/about.jpg") no-repeat center center/cover;
+    padding-top: 20px;
+    padding-bottom: 50px;
+
+}
+
+.about h2{
+    color: rgb(19, 154, 154);
+    margin:0;
+    padding:30px
+}
+.about p{
+    width: 50%;
+    margin: auto;
+    color: #000;
+    font-size: 20px;
+    background-color:rgba(238, 232, 232, 0.3);
+    padding:20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
